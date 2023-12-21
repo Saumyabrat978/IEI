@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 200px;
+      width: 75%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      background-image: url('3.jpeg'); 
+      background-size: cover;
+      background-position: center;
+    }
+
+    .left-section {
+      display: flex;
+      align-items: center;
+    }
+
+    .social-links {
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+    }
+
+    .social-links img {
+      width: 30px;
+      height: 30px;
+      margin: 0 10px;
+    }
+
+    .footer-logo {
+      max-width: 100px;
+    }
+
+    .footer-description {
+      max-width: 300px;
+      text-align: left;
+      font-size: 14px;
+      color: black;
+    }
+
+    .right-section {
+      display: flex;
+      align-items: center;
+      color: black;
+      margin-top: 10px; 
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .footer-links {
+      display: flex;
+      align-items: center;
+      color: black;
+    }
+
+    .footer-links a {
+      color:black;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+      .footer {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .left-section, .right-section {
+        width: 100%;
+        margin-bottom: 10px; /* Add margin for spacing */
+      }
+
+      .social-links {
+        margin-left: 0;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="content">
+  <!-- Your website content goes here -->
+</div>
+
+<div class="footer">
+  <div class="left-section">
+    <img src="4.png" alt="Your Logo" class="footer-logo">
+    <div>
+      <p class="footer-description">Your website description goes here. Briefly describe your website or business.</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="f.png" alt="Facebook Logo">
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+          <img src="x.png" alt="Twitter Logo">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="right-section">
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#about">Activities</a>
+      <a href="#about">Our Team</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
